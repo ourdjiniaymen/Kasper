@@ -1,0 +1,39 @@
+/******************************************* Start Variables ********************************************/
+:root {
+    --main-color: #19c8fa;
+    --transparent-color: rgba(15, 116,143, .7);
+    --paragraph-color: #777;
+}
+/******************************************* End Variables **********************************************/
+
+/******************************************* Start Global Rules *****************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --wabkit-border-sizing: border-box;
+    --moz-border-sizing: border-box;
+    -o-border-sizing: border-box;
+    -ms-border-sizing: border-box;
+}
+html {
+scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+/******************************************* End Global Rules *******************************************/
+
+/******************************************* Start Header ***********************************************/
+/******************************************* End Header *************************************************/
