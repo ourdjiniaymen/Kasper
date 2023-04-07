@@ -31,6 +31,15 @@ h3 {
   margin: 0;
   padding: 0;
 }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
 /* End Global Rules */
 
 /* Start Components */
@@ -286,12 +295,6 @@ header nav .form i {
   }
 }
 
-.overlay {
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
 .land .intro {
   color: #fff;
   position: absolute;
@@ -376,18 +379,17 @@ header nav .form i {
 .services .services-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  grid-row-gap : 60px;
-  grid-column-gap:40px ;
+  grid-row-gap: 60px;
+  grid-column-gap: 40px;
 }
 
 /* Mobile */
 @media (max-width: 767px) {
-  .services .services-content{
-    grid-template-columns : 1fr;
-    grid-row-gap : 40px;
+  .services .services-content {
+    grid-template-columns: 1fr;
+    grid-row-gap: 40px;
   }
 }
-
 
 .services .services-content .service {
   display: flex;
@@ -419,3 +421,79 @@ header nav .form i {
   font-size: 16px;
 }
 /* End Services */
+
+/* Start Design */
+.design {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: #1f2021;
+  background-image: url(../images/design-features.jpg);
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.design .image {
+  position: absolute;
+  bottom: -100px;
+  left: 23%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .design .image {
+    display: none;
+  }
+}
+
+.design .text {
+  color: #fff;
+  width: 54%;
+  background-color: var(--transparent-color);
+  padding: 50px;
+  z-index: 1;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .design .text {
+    width: 100%;
+  }
+}
+
+.design .text h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 60px;
+}
+
+.design .text ul {
+  padding-left: 35px;
+}
+
+.design .text ul li {
+  text-transform: capitalize;
+  position: relative;
+}
+
+.design .text ul li:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.design .text ul li::before {
+  content: "\e163";
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+  position: absolute;
+  left: -35px;
+}
+/* End Design */
