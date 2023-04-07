@@ -622,7 +622,7 @@ header nav .form i {
 }
 
 .videos video {
-  max-width: 100%;
+  width: 100%;
   object-fit:cover;
   position: relative;
   z-index: -1;
