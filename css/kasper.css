@@ -614,5 +614,54 @@ header nav .form i {
   background-color: var(--main-color);
   color: #fff;
 }
-
 /* End Portolio */
+
+/* Start Video */
+.videos {
+  position: relative;
+}
+
+.videos video {
+  max-width: 100%;
+  object-fit:cover;
+  position: relative;
+  z-index: -1;
+}
+
+.videos .text {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  z-index: 1;
+  background-color: var(--transparent-color);
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.videos .text h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.videos .text p {
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+
+.videos .text a {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  padding: 8px 20px;
+}
+/* End Video */
