@@ -549,14 +549,14 @@ header nav .form i {
 
 .portfolio .gallery .gallery-item img {
   max-width: 100%;
-  transition:  transform var(--main-duration);
-  -webkit-transition:  transform var(--main-duration);
-  -moz-transition:  transform var(--main-duration);
-  -ms-transition:  transform var(--main-duration);
-  -o-transition:  transform var(--main-duration);
+  transition: transform var(--main-duration);
+  -webkit-transition: transform var(--main-duration);
+  -moz-transition: transform var(--main-duration);
+  -ms-transition: transform var(--main-duration);
+  -o-transition: transform var(--main-duration);
 }
 
-.portfolio .gallery .gallery-item:hover img{
+.portfolio .gallery .gallery-item:hover img {
   transform: scale(1.2) rotate(3deg);
   -webkit-transform: scale(1.2) rotate(3deg);
   -moz-transform: scale(1.2) rotate(3deg);
@@ -577,12 +577,13 @@ header nav .form i {
   -moz-transform: translateY(100%);
   -ms-transform: translateY(100%);
   -o-transform: translateY(100%);
-  transition:  transform var(--main-duration);
-  -webkit-transition:  transform var(--main-duration);
-  -moz-transition:  transform var(--main-duration);
-  -ms-transition:  transform var(--main-duration);
-  -o-transition:  transform var(--main-duration);
+  transition: transform var(--main-duration);
+  -webkit-transition: transform var(--main-duration);
+  -moz-transition: transform var(--main-duration);
+  -ms-transition: transform var(--main-duration);
+  -o-transition: transform var(--main-duration);
   z-index: 1;
+  border-bottom: 1px solid rgba(119, 119, 119, 0.1);
 }
 
 .portfolio .gallery .gallery-item:hover .caption {
@@ -607,7 +608,7 @@ header nav .form i {
   display: block;
   width: fit-content;
   margin: 30px auto 0;
-  padding: 22px;
+  padding: 15px 25px;
   text-transform: uppercase;
   text-decoration: none;
   background-color: var(--main-color);
