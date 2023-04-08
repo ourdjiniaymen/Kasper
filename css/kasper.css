@@ -429,6 +429,7 @@ header nav .form i {
   padding-bottom: var(--section-padding);
   background-color: #1f2021;
   background-image: url(../images/design-features.jpg);
+  background-size: cover;
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -671,9 +672,8 @@ header nav .form i {
   padding-top: var(--section-padding);
   overflow: hidden;
   text-align: center;
-
 }
-.about img{
+.about img {
   max-width: 100%; /* in order to avoid horizontal overflow (scroll)  */
   position: relative;
   bottom: -50px;
@@ -682,9 +682,82 @@ header nav .form i {
 
 /* Mobile */
 @media (max-width: 767px) {
-  .about img{
+  .about img {
     bottom: -30px;
     margin-top: -30px;
   }
 }
 /* End About */
+
+/* Start Statistics */
+.statistics {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  position: relative;
+  background-color: #1f2021;
+  background-image: url(../images/stats.png);
+  background-size: cover;
+}
+
+.statistics .statistics-container {
+  background-color: var(--transparent-color);
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap : 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.statistics .statistics-container .box {
+  flex-basis:100%;
+  text-align: center;
+}
+
+/* Small Screen */
+@media (min-width: 768px) {
+  .statistics .statistics-container .box {
+    flex-basis: 50%;
+  }
+}
+
+/* Medium and Large Screen */
+@media (min-width: 992px) {
+  .statistics .statistics-container .box {
+    flex-basis: 25%;
+  }
+}
+
+.statistics .statistics-container .box span {
+  display: block;
+  color: #fff;
+}
+
+.statistics .statistics-container .box .icon {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  background-color: #000;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.statistics .statistics-container .box .number {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 30px 0 20px;
+}
+
+.statistics .statistics-container .box .task {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+/* End Statistics */
