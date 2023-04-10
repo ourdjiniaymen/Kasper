@@ -857,7 +857,7 @@ header nav .form i {
   color: #777;
   font-size: 14px;
   font-weight: 400;
-  margin-left: auto; 
+  margin-left: auto;
   margin-bottom: 15px;
 }
 
@@ -952,6 +952,61 @@ header nav .form i {
   -ms-transform: translateX(7px);
   -o-transform: translateX(7px);
 }
-
 /* End Skills */
 
+/* Start Quote */
+.quote {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: #1f2021;
+  background-image: url(../images/quote.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.quote .overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.quote blockquote {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.quote blockquote q {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.quote blockquote q::before {
+  content: "\f10d";
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+  font-size: 20px;
+  position: relative;
+  top: -10px;
+  left: -5px;
+}
+
+.quote blockquote q::after {
+  content: "\f10e";
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+  font-size: 20px;
+  position: relative;
+  top: -10px;
+  right: -5px;
+}
+
+.quote blockquote .author {
+  text-transform: capitalize;
+}
+/* End Quote */
