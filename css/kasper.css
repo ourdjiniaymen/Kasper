@@ -31,6 +31,8 @@ h3,
 h4 {
   margin: 0;
   padding: 0;
+  font-weight: 400;
+  font-size: 1em;
 }
 
 .overlay {
@@ -705,13 +707,13 @@ header nav .form i {
   z-index: 1;
   display: flex;
   flex-wrap: wrap;
-  row-gap : 100px;
+  row-gap: 100px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
 .statistics .statistics-container .box {
-  flex-basis:100%;
+  flex-basis: 100%;
   text-align: center;
 }
 
@@ -759,5 +761,197 @@ header nav .form i {
   text-transform: capitalize;
   font-size: 14px;
 }
-
 /* End Statistics */
+
+/* Start Skills */
+.our-skills {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.our-skills .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.our-skills .container .box {
+  flex-basis: 100%;
+}
+
+.our-skills .container .box.testimonials {
+  margin-bottom: 50px;
+}
+
+/* Medium and Large Screen */
+@media (min-width: 992px) {
+  .our-skills .container .box {
+    flex-basis: calc(50% - 60px);
+    margin-bottom: 0;
+  }
+  .our-skills .container .box.testimonials {
+    margin-bottom: 0;
+  }
+}
+
+.our-skills .box .heading {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.our-skills .box .heading h3 {
+  text-transform: uppercase;
+  font-size: 19px;
+  margin-bottom: 30px;
+}
+
+.our-skills .box .heading p {
+  color: var(--pararaph-color);
+  line-height: 2;
+  font-size: 16px;
+  margin: 0 auto;
+  max-width: 550px;
+}
+
+.our-skills .testimonial {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  row-gap: 20px;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .our-skills .testimonial {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.our-skills .testimonial:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+.our-skills .testimonial img {
+  width: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.our-skills .testimonial .text {
+  position: relative;
+}
+
+.our-skills .testimonial .text p {
+  line-height: 1.8;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.our-skills .testimonial .text span {
+  display: block;
+  width: fit-content;
+  color: #777;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: auto; 
+  margin-bottom: 15px;
+}
+
+.our-skills .testimonial .text::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.our-skills .bullets {
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+  margin: 50px auto 0;
+}
+
+.our-skills .testimonials .bullets li {
+  width: 13px;
+  height: 13px;
+  border: 1px solid #777;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.our-skills .testimonials .bullets li.active {
+  border-color: var(--main-color);
+  background-color: #19c8fa;
+}
+
+.our-skills .skill:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+.our-skills .skill h4 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.our-skills .skill .prog {
+  width: 100%;
+  height: 30px;
+  background-color: #dedadc;
+}
+
+.our-skills .skill .prog div {
+  height: 100%;
+  background-color: var(--main-color);
+  position: relative;
+}
+
+.our-skills .skill .prog div::before {
+  content: attr(data-progress);
+  position: absolute;
+  right: 0;
+  top: -45px;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #000;
+  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.our-skills .skill .prog div::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -15px;
+  border: 7px solid;
+  border-color: #000 transparent transparent;
+  transform: translateX(7px);
+  -webkit-transform: translateX(7px);
+  -moz-transform: translateX(7px);
+  -ms-transform: translateX(7px);
+  -o-transform: translateX(7px);
+}
+
+/* End Skills */
+
