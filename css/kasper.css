@@ -1072,10 +1072,10 @@ header nav .form i {
 
 .pricing .plans .plan ul li {
   padding: 20px 0;
-  width : 150px;
+  width: 150px;
   border-bottom: 1px solid var(--main-color);
   margin: auto;
-}   
+}
 
 .pricing .plans .plan ul li:last-of-type {
   border-bottom: none;
@@ -1112,7 +1112,7 @@ header nav .form i {
 }
 
 .pricing .contact a {
-  display: inline-block ;
+  display: inline-block;
   text-decoration: none;
   text-transform: capitalize;
   background-color: var(--main-color);
@@ -1120,3 +1120,100 @@ header nav .form i {
   padding: 15px 30px;
 }
 /* End Pricing */
+
+/* Start Subscribe */
+.subscribe {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  position: relative;
+  background-color: #1f2021;
+  background-image: url(../images/subscribe.jpg);
+  background-size: cover;
+  color: #fff;
+}
+
+.subscribe .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Medium and Large Screen */
+@media (min-width: 992px) {
+  .subscribe .container{
+    display: flex;
+    align-items: center;
+  }
+}
+
+.subscribe form {
+  border: 1px solid;
+  max-width: 500px;
+  flex-basis: 500px;
+  flex-shrink: 0;
+  display: flex;
+  position: relative;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Medium and Large Screen */
+@media (min-width: 992px) {
+  .subscribe form{
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
+}
+
+.subscribe form::before{
+  content: "\f0e0";
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-regular);
+  font-size: 21px;
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.subscribe form input[type="email"] {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: inherit;
+  margin-left: 60px;
+  caret-color: var(--main-color);
+}
+
+.subscribe form input::placeholder {
+  color: inherit;
+  text-transform: capitalize;
+}
+
+.subscribe form button {
+  background-color: var(--main-color);
+  color: inherit;
+  padding: 20px;
+  border: none;
+  text-transform: uppercase;
+}
+
+.subscribe p {
+  line-height: 2;
+  text-align: center;
+}
+
+/* Medium and Large Screen */
+@media (min-width: 992px) {
+  .subscribe p{
+    text-align: start;
+  }
+}
+/* End Subscribe */
