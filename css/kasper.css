@@ -1010,3 +1010,113 @@ header nav .form i {
   text-transform: capitalize;
 }
 /* End Quote */
+
+/* Start Pricing */
+.pricing {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.pricing .plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.pricing .plans .plan {
+  background-color: #fcfcfc;
+  border-top: 1px solid var(--main-color);
+}
+
+.pricing .plans .plan .head {
+  padding: 40px 0;
+}
+
+.pricing .plans .plan .head h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.pricing .plans .plan .head .price {
+  position: relative;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.pricing .plans .plan .head .price::before {
+  content: "$";
+  font-size: 25px;
+  font-weight: 400;
+  position: absolute;
+  left: -30px;
+  top: 0;
+}
+
+.pricing .plans .plan .head .price::after {
+  content: "/Mo";
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  right: -50px;
+  bottom: 15px;
+}
+
+.pricing .plans .plan ul {
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+
+.pricing .plans .plan ul li {
+  padding: 20px 0;
+  width : 150px;
+  border-bottom: 1px solid var(--main-color);
+  margin: auto;
+}   
+
+.pricing .plans .plan ul li:last-of-type {
+  border-bottom: none;
+}
+
+.pricing .plans .plan .foot {
+  padding: 30px 0;
+}
+
+.pricing .plans .plan .foot button {
+  padding: 20px;
+  border: 1px solid var(--main-color);
+  text-transform: capitalize;
+  color: #222;
+  background-color: #fcfcfc;
+}
+
+.pricing .plans .plan .foot button:hover {
+  background-color: var(--main-color);
+  color: #fff;
+  transition: var(--main-duration);
+  -webkit-transition: var(--main-duration);
+  -moz-transition: var(--main-duration);
+  -ms-transition: var(--main-duration);
+  -o-transition: var(--main-duration);
+  cursor: pointer;
+}
+.pricing .contact {
+  text-align: center;
+}
+.pricing .contact p {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.pricing .contact a {
+  display: inline-block ;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 15px 30px;
+}
+/* End Pricing */
