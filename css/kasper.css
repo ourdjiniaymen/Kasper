@@ -1139,7 +1139,7 @@ header nav .form i {
 
 /* Medium and Large Screen */
 @media (min-width: 992px) {
-  .subscribe .container{
+  .subscribe .container {
     display: flex;
     align-items: center;
   }
@@ -1159,13 +1159,13 @@ header nav .form i {
 
 /* Medium and Large Screen */
 @media (min-width: 992px) {
-  .subscribe form{
+  .subscribe form {
     margin-bottom: 0;
     margin-right: 50px;
   }
 }
 
-.subscribe form::before{
+.subscribe form::before {
   content: "\f0e0";
   display: inline-block;
   text-rendering: auto;
@@ -1188,7 +1188,8 @@ header nav .form i {
   outline: none;
   background-color: transparent;
   color: inherit;
-  margin-left: 60px;
+  width:calc(100% - 150px);
+  padding-left: 60px;
   caret-color: var(--main-color);
 }
 
@@ -1200,9 +1201,11 @@ header nav .form i {
 .subscribe form button {
   background-color: var(--main-color);
   color: inherit;
-  padding: 20px;
+  width: 150px;
+  padding: 20px 0;
   border: none;
   text-transform: uppercase;
+
 }
 
 .subscribe p {
@@ -1212,7 +1215,7 @@ header nav .form i {
 
 /* Medium and Large Screen */
 @media (min-width: 992px) {
-  .subscribe p{
+  .subscribe p {
     text-align: start;
   }
 }
