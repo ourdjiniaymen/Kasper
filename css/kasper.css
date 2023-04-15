@@ -1303,3 +1303,59 @@ header nav .form i {
   cursor: pointer;
 }
 /* End Contact */
+
+/* Start Footer */
+.main-footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #1f2021;
+  background-image: url(../images/subscribe.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.main-footer .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.main-footer .container {
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.main-footer .social {
+  margin: 60px auto 70px;
+  width: fit-content;
+  position: relative;
+}
+
+.main-footer .social::before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 20px);
+  height: 1px;
+  top: calc(50% - 0.5px);
+  left: -10px;
+  background-color: #fff;
+}
+
+.main-footer .social h3 {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.main-footer .social ul {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 170px;
+}
+
+.main-footer .special {
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+/* End Footer */
