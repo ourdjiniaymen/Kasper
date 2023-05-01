@@ -1,4 +1,4 @@
-# Kasper One-Page PSD Template Conversion
+# Kasper One-Page HTML-CSS Template
 
 This project involves converting the Kasper One-Page PSD Template into a fully functional and responsive HTML/CSS website.
 
